@@ -1,0 +1,69 @@
+body{
+margin:0;
+padding:0;
+font-family:Arial;
+background-image:url(blue.jpg);
+background-size:140%;
+background-position:center;
+}
+.sign-up-form
+{
+   width:300px;
+   box-shadow:0 0 3px 0 rgba(0,0,0,0.3);
+   background:white;
+   padding:20px;
+   margin:8% auto;
+   text-align:center;
+}
+.sign-up-form h1{
+ color:blue;
+ margin-bottom:30px;
+}
+.input-box
+{
+  border-radius:20px;
+  padding:5px;
+  margin:10px 0px;
+  width:100%;
+  border:1px solid #999;
+  outline:none;
+ 
+}
+button{
+ colour:blue;
+ width:100%;
+padding:10px;
+border-radius:20px;
+font-size:15px;
+cursor:pointer
+outline:none;
+border:none;
+}
+.signup-btn
+{
+ background-color:skyblue;
+color:white;
+}
+.email-btn
+{
+background-color:blue;
+color:white;
+}
+a{
+text-decoration:none;
+}
+hr{
+margin-top:20px;
+width:80%;
+}
+.or{
+background-color:#fff;
+width:30px;
+margin:-19px auto 10px;
+}
+img
+{
+border-radius:40px 40px 40px 40px;
+width:70px;
+margin-top:-50px;
+}

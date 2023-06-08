@@ -2,14 +2,15 @@ body{
 margin:0;
 padding:0;
 font-family:Arial;
-background-image:url(blue.jpg);
+background-image:url(nature.avif);
 background-size:140%;
 background-position:center;
 }
 .sign-up-form
 {
    width:300px;
-   box-shadow:0 0 3px 0 rgba(0,0,0,0.3);
+   box-shadow:1px 1px 1px 3px white;
+   background:transparent;
    background:white;
    padding:20px;
    margin:8% auto;
@@ -21,11 +22,12 @@ background-position:center;
 }
 .input-box
 {
-  border-radius:20px;
+  color:black;
+  border-radius:20px ;
   padding:5px;
   margin:10px 0px;
   width:100%;
-  border:1px solid #999;
+  border:1px solid #f1ebeb;
   outline:none;
  
 }
@@ -57,7 +59,7 @@ margin-top:20px;
 width:80%;
 }
 .or{
-background-color:#fff;
+background-color:black;
 width:30px;
 margin:-19px auto 10px;
 }

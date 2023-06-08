@@ -3,6 +3,7 @@ margin:0;
 padding:0;
 font-family:Arial;
 background-image:url(nature.avif);
+background-repeat: no-repeat;
 background-size:140%;
 background-position:center;
 }

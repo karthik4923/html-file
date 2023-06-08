@@ -11,13 +11,17 @@ background-position:center;
    width:300px;
    box-shadow:1px 1px 1px 3px white;
    background:transparent;
-   background:white;
+   
    padding:20px;
    margin:8% auto;
    text-align:center;
+   box-color:white;
+}
+.check-box{
+   background:white;
 }
 .sign-up-form h1{
- color:blue;
+ color:rgb(247, 247, 249);
  margin-bottom:30px;
 }
 .input-box
@@ -29,7 +33,7 @@ background-position:center;
   width:100%;
   border:1px solid #f1ebeb;
   outline:none;
- 
+
 }
 button{
  colour:blue;
@@ -59,6 +63,7 @@ margin-top:20px;
 width:80%;
 }
 .or{
+
 background-color:black;
 width:30px;
 margin:-19px auto 10px;

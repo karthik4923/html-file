@@ -4,7 +4,7 @@ body {
   font-family: Arial;
   background-image: url(nature.avif);
   background-repeat: no-repeat;
-  background-size: 140%;
+  background-size: cover;
   background-position: center;
 }
 
@@ -81,15 +81,14 @@ img {
 
 /* Responsive Styles */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
+
+
+
   .sign-up-form {
     width: 80%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .sign-up-form {
-    padding: 10px;
+    max-width: 400px;
+    margin: 8% auto;
   }
 
   .sign-up-form h1 {
@@ -98,9 +97,39 @@ img {
   }
 
   .input-box {
+    font-size: 14px;
+    padding: 8px;
+    margin: 8px 0;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  img {
+    width: 60px;
+    margin-top: -40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  
+
+
+  .sign-up-form {
+    padding: 10px;
+  }
+
+  .sign-up-form h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .input-box {
     font-size: 12px;
-    padding: 3px;
-    margin: 5px 0px;
+    padding: 6px;
+    margin: 6px 0;
   }
 
   button {
@@ -108,13 +137,9 @@ img {
     padding: 8px;
   }
 
-  hr {
-    margin-top: 15px;
-  }
-
   img {
     width: 50px;
-    margin-top: -40px;
+    margin-top: -30px;
   }
 }
 

@@ -5,7 +5,7 @@ body {
   background-image: url(nature.avif);
   background-repeat: no-repeat;
   background-size: 140%;
-  background-position: cover;
+  background-position: center;
 }
 
 .sign-up-form {

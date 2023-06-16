@@ -1,0 +1,95 @@
+body{
+  margin: 0;
+  padding: 0;
+  color:white;
+  font-family: Arial;
+  background-image: url(nature.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+.sign-up h1 {
+    color: rgb(247, 247, 249);
+    margin-bottom: 30px;
+  }
+.sign-up{
+  width: 300px;
+  border:2px solid rgb(238, 231, 231);
+  background-image:url(blue.jpg);
+  padding: 60px;
+  margin: 8% auto;
+  text-align: center;
+  box-color: white;
+
+}
+.input-box{
+  color: rgb(47, 43, 43);
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px;
+  margin: 10px 0px;
+  width: 100%;
+  border: 1px solid #949090;
+  outline: none;
+}
+.check-box {
+    background:white;
+}
+.signup-btn {
+    background-color: skyblue;
+    color: white;
+  }
+  button {
+    color: blue;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+  @media only screen and (max-width: 767px) {
+    .sign-up {
+        width: 80%;
+        max-width: 400px;
+        margin: 8% auto;
+      }
+    
+      .sign-up h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    .input-box{
+        font-size: 14px;
+        padding: 8px;
+        margin: 8px 0;
+    }
+    button {
+        font-size: 14px;
+        padding: 10px;
+      }
+  }
+  @media only screen and (max-width:400px){
+    .sign-up {
+        padding: 20px;
+        margin-bottom: 30px;
+      }
+    
+      .sign-up h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    
+      .input-box {
+        font-size: 12px;
+        padding: 10px;
+        margin: 15px 0;
+      }
+    
+      button {
+        font-size: 12px;
+        padding: 8px;
+      }
+  }
+  

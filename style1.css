@@ -73,7 +73,8 @@ body{
   @media only screen and (max-width:400px){
     .sign-up {
         padding: 20px;
-        margin-bottom: 30px;
+        margin-top:50px;
+        margin-bottom:50px;
       }
     
       .sign-up h1 {

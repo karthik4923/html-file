@@ -6,15 +6,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment:fixed;
+  height: 100vh;
 }
 
 .sign-up-form {
-  width: 300px;
+  width: 400px;
+  max-width: 90%;
   box-shadow: 1px 1px 1px 3px white;
   background: transparent;
-  padding: 60px;
-  margin: 8% auto;
+  padding: 20px;
+  margin: 10% auto;
   text-align: center;
   box-color: white;
 }
@@ -31,8 +32,8 @@ body {
 .input-box {
   color: black;
   border-radius: 20px;
-  padding: 5px;
-  margin: 10px 0px;
+  padding: 10px;
+  margin: 10px 0;
   width: 100%;
   border: 1px solid #f1ebeb;
   outline: none;
@@ -41,9 +42,9 @@ body {
 button {
   color: blue;
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border-radius: 20px;
-  font-size: 15px;
+  font-size: 16px;
   cursor: pointer;
   outline: none;
   border: none;
@@ -75,23 +76,21 @@ hr {
 }
 
 img {
-  border-radius: 40px 40px 40px 40px;
-  width: 70px;
-  margin-top: -50px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-top: -70px;
 }
 
 /* Responsive Styles */
 
-@media only screen and (max-width: 767px) {
-
-
-
+@media only screen and (max-width: 768px) {
   .sign-up-form {
-    width: 80%;
-    max-width: 400px;
+    width: 90%;
     margin: 8% auto;
   }
-
+  
   .sign-up-form h1 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -109,15 +108,13 @@ img {
   }
 
   img {
-    width: 60px;
-    margin-top: -40px;
+    width: 80px;
+    height: 80px;
+    margin-top: -50px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  
-
-
   .sign-up-form {
     padding: 10px;
   }
@@ -139,9 +136,8 @@ img {
   }
 
   img {
-    width: 50px;
+    width: 60px;
+    height: 60px;
     margin-top: -30px;
   }
 }
-
-/* Add more media queries as needed for different screen sizes */

@@ -11,7 +11,8 @@ body {
 
 .sign-up-form {
   width: 300px;
-  box-shadow: 1px 1px 1px 3px white;
+  border:2px solid black;
+  border-radius:10px 10px 10px 10px;
   background: transparent;
   backdrop-filter: blur(15px);
   padding: 20px;
@@ -72,6 +73,7 @@ hr {
 .or {
   background-color: black;
   width: 30px;
+  border-radius:15px;
   margin: -19px auto 10px;
 }
 

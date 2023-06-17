@@ -1,36 +1,63 @@
-body{
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  padding: 20px;
   margin: 0;
   padding: 0;
   color:white;
   font-family: Arial;
-  background-image: url(nature.avif);
+  background-image: url(n1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment:fixed;
 }
-.sign-up h1 {
-    color: rgb(247, 247, 249);
-    margin-bottom: 30px;
-  }
-.sign-up{
+
+.form {
+  border-radius: 10px;
   width: 300px;
-  border:2px solid rgb(238, 231, 231);
-  background-image:url(blue.jpg);
+  border:2px solid rgb(15, 15, 15);
+  backdrop-filter: blur(15px);
   padding: 60px;
-  margin: 8% auto;
+  margin: 4% auto;
   text-align: center;
   box-color: white;
-
 }
-.input-box{
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #f70808;
+}
+
+.input-field {
   color: rgb(47, 43, 43);
   border-radius: 10px 10px 10px 10px;
   padding: 5px;
-  margin: 10px 0px;
+  padding-left:30px;
+  margin: 15px 0px;
   width: 100%;
   border: 1px solid #949090;
   outline: none;
+}
+
+.input-field:focus {
+  border-color: #0099ff;
+}
+
+.input-field::placeholder {
+  color: #0c0c0c;
+}
+.form h1{
+   color: rgb(247, 247, 249);
+   margin-bottom: 30px;
 }
 .check-box {
     background:white;
@@ -38,6 +65,20 @@ body{
 .signup-btn {
     background-color: skyblue;
     color: white;
+  }
+  .email-btn {
+    background-color: blue;
+    color: white;
+  }
+  hr {
+    margin-top: 20px;
+    width: 90%;
+  }
+  .or {
+    background-color:black ;
+    width: 30px;
+    border-radius: 10px 10px;
+    margin: -19px auto 10px;
   }
   button {
     color: blue;
@@ -49,7 +90,7 @@ body{
     outline: none;
     border: none;
   }
-  @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .sign-up {
         width: 80%;
         max-width: 400px;
@@ -72,8 +113,8 @@ body{
   }
   @media only screen and (max-width:400px){
     .sign-up {
-        padding: 20px;
         margin-top:50px;
+        padding: 0px;
         margin-bottom:50px;
       }
     
@@ -92,5 +133,4 @@ body{
         font-size: 12px;
         padding: 8px;
       }
-  }
-  
+}

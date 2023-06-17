@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+    color:white;
+    font-family: Arial;
+    background-image: url(n3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .input-field {
+    color: rgb(47, 43, 43);
+    border-radius: 40px 40px 40px 40px;
+    padding: 5px;
+    padding-left:30px;
+    margin: 15px 0px;
+    width: 100%;
+    border: 1px solid #949090;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border-color: #0099ff;
+  }
+  
+  .input-field::placeholder {
+    color: #0c0c0c;
+  }
+  .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #121212;
+  }
+  .otp-input {
+    margin-left:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .otp-input input {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  /* Optional styling for better visual representation */
+  
+  .otp-input input:focus {
+    border-color: #007bff;
+  }
+  .sign-up{
+
+    width: 300px;
+    border:2px solid rgb(10, 10, 10);
+    backdrop-filter: blur(15px);
+    padding:50px;
+    padding-right:80px;
+    border-radius:10px 10px 10px 10px;
+    margin: 5% auto;
+    text-align: center;
+    box-color: rgb(15, 15, 15);
+  
+  }
+  button {
+    color: rgb(14, 14, 14);
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+  .signup-btn {
+    margin-left:5%;
+    background-color: skyblue;
+    color:black;
+  }
+  @media only screen and (max-width: 767px) {
+    .sign-up {
+      padding: 30px;
+      padding-right: 50px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .sign-up {
+      padding: 20px;
+      padding-right: 30px;
+    }
+  
+    .otp-input {
+      margin-left: 0;
+    }
+  }
+  
+  

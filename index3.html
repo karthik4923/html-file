@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>sign in with email</title>
+        <link rel="stylesheet" href="style2.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <div class="sign-up">
+            <h1>Sign Up</h1>
+            <div class="input-container">
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+                <input type="email" class="input-field" placeholder="Email">
+            </div>
+            <h2>Enter OTP</h2>
+            <div class="otp-input">
+                <input type="text" id="otp-1" maxlength="1" onkeyup="moveToNext(this, 'otp-2')" />
+                <input type="text" id="otp-2" maxlength="1" onkeyup="moveToNext(this, 'otp-3')" />
+                <input type="text" id="otp-3" maxlength="1" onkeyup="moveToNext(this, 'otp-4')" />
+                <input type="text" id="otp-4" maxlength="1" onkeyup="moveToNext(this, 'otp-5')" />
+                <input type="text" id="otp-5" maxlength="1" onkeyup="moveToNext(this, 'otp-6')" />
+                <input type="text" id="otp-6" maxlength="1" onkeyup="moveToNext(this, 'otp-6')" />
+              </div>
+            <p><span><input type="checkbox" class="check-box"></span>I agree to the terms of services</p>
+            <button type="button" class="signup-btn">verify</button>
+        </div>
+        
+
+    </body>
+</html>

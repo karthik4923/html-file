@@ -64,16 +64,19 @@ body {
     background:white;
 }
 .signup-btn {
+    margin-left:5%;
     background-color: skyblue;
     color: white;
   }
   .email-btn {
+    margin-left:5%;
     background-color: blue;
     color: white;
   }
   hr {
     margin-top: 20px;
-    width: 90%;
+    margin-left:5%;
+    width: 100%;
   }
   .or {
     background-color:black ;

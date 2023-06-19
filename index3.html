@@ -1,32 +1,59 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>sign in with email</title>
-        <link rel="stylesheet" href="style2.css">
-        <script src="script.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+  <title>Sign in with Email</title>
+  <link rel="stylesheet" href="style2.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Add the CSS code provided in the previous response here */
+  </style>
+</head>
+<body>
+  <div class="sign-up">
+    <h1>Sign Up</h1>
+    <div class="input-container">
+      <span class="icon"><i class="fas fa-envelope"></i></span>
+      <input type="email" class="input-field" placeholder="Email">
+    </div>
+    <button type="button" class="submit">Submit</button>
+    <h2>Enter OTP</h2>
+    <div class="otp-input">
+      <input type="text" id="otp-1" maxlength="1" onkeyup="moveToNext(this, 'otp-2')" />
+      <input type="text" id="otp-2" maxlength="1" onkeyup="moveToNext(this, 'otp-3')" />
+      <input type="text" id="otp-3" maxlength="1" onkeyup="moveToNext(this, 'otp-4')" />
+      <input type="text" id="otp-4" maxlength="1" onkeyup="moveToNext(this, 'otp-5')" />
+      <input type="text" id="otp-5" maxlength="1" onkeyup="moveToNext(this, 'otp-6')" />
+      <input type="text" id="otp-6" maxlength="1" onkeyup="moveToNext(this, 'otp-6')" />
+    </div>
+    <p><span><input type="checkbox" class="check-box"></span>I agree to the terms of service</p>
+    <button type="button" class="signup-btn">Verify</button>
+  </div>
 
-    </head>
-    <body>
-        <div class="sign-up">
-            <h1>Sign Up</h1>
-            <div class="input-container">
-                <span class="icon"><i class="fas fa-envelope"></i></span>
-                <input type="email" class="input-field" placeholder="Email">
-            </div>
-            <h2>Enter OTP</h2>
-            <div class="otp-input">
-                <input type="text" id="otp-1" maxlength="1" onkeyup="moveToNext(this, 'otp-2')" />
-                <input type="text" id="otp-2" maxlength="1" onkeyup="moveToNext(this, 'otp-3')" />
-                <input type="text" id="otp-3" maxlength="1" onkeyup="moveToNext(this, 'otp-4')" />
-                <input type="text" id="otp-4" maxlength="1" onkeyup="moveToNext(this, 'otp-5')" />
-                <input type="text" id="otp-5" maxlength="1" onkeyup="moveToNext(this, 'otp-6')" />
-                <input type="text" id="otp-6" maxlength="1" onkeyup="moveToNext(this, 'otp-6')" />
-              </div>
-            <p><span><input type="checkbox" class="check-box"></span>I agree to the terms of services</p>
-            <button type="button" class="signup-btn">verify</button>
-        </div>
-        
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>OTP Sent</h2>
+      <p>OTP successfully Sent</p>
+      <button id="closePopupBtn">Close</button>
+    </div>
+  </div>
 
-    </body>
+  <script>
+    // Function to show the popup
+    function showPopup() {
+      document.getElementById('popup').style.display = 'flex';
+    }
+
+    // Event listener for the submit button
+    document.querySelector('.submit').addEventListener('click', showPopup);
+
+    // Function to close the popup
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    // Event listener for the close button in the popup
+    document.getElementById('closePopupBtn').addEventListener('click', closePopup);
+  </script>
+</body>
 </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Sign in with Email</title>
+  <link rel="stylesheet" href="style3.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Add the CSS code provided in the previous response here */
+  </style>
+</head>
+<body>
+  <div class="sign-up">
+    <h1>Forget Password</h1>
+    <div class="input-container">
+      <span class="icon"><i class="fas fa-envelope"></i></span>
+      <input type="email" class="input-field" placeholder="Email">
+    </div>
+    <button type="button" class="submit1">Submit</button>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>Mail sent</h2>
+      <p>change your password</p>
+      <button id="closePopupBtn">Close</button>
+    </div>
+  </div>
+
+  <script>
+    // Function to show the popup
+    function showPopup() {
+      document.getElementById('popup').style.display = 'flex';
+    }
+
+    // Event listener for the submit button
+    document.querySelector('.submit1').addEventListener('click', showPopup);
+
+    // Function to close the popup
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    // Event listener for the close button in the popup
+    document.getElementById('closePopupBtn').addEventListener('click', closePopup);
+  </script>
+</body>
+</html>
